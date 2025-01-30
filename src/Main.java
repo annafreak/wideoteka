@@ -30,7 +30,7 @@ class VideoLibrary{
     }
     public void filterMoviesByLetter(){
         Scanner sc = new Scanner(System.in);
-
+         System.out.println("podaj litere by wyszukac film: ");
         String a=sc.nextLine();
 
         movies.stream()
@@ -52,7 +52,7 @@ public class Main {
 
     VideoLibrary library = new VideoLibrary();
     library.welcomeMessage();
-    library.addMovie("The Godfather");
+    library.addMovie("the Godfather");
     library.addMovie("nigeriano");
     library.addMovie("asiano mit jewiano");
     library.displayMovies();
